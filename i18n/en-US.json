@@ -1,0 +1,4 @@
+{
+    "greetTo": "Hello {name}",
+    "test": "This is a test message"
+}
