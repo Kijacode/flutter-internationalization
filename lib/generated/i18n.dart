@@ -37,6 +37,8 @@ class I18n implements WidgetsLocalizations {
   String greetTo(String name) => "Hello ${name}";
   /// "This is a test message"
   String get test => "This is a test message";
+  /// "Internationalization Example"
+  String get title => "Internationalization Example";
 }
 
 class _I18n_en_US extends I18n {
@@ -55,6 +57,9 @@ class _I18n_de_DE extends I18n {
   /// "Dies ist eine Testnachricht"
   @override
   String get test => "Dies ist eine Testnachricht";
+  /// "Internationalization Beispiel"
+  @override
+  String get title => "Internationalization Beispiel";
 
   @override
   TextDirection get textDirection => TextDirection.ltr;

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:internationalization/generated/i18n.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,14 +7,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    var i18n = I18n.delegate;
+    final i18n = I18n.delegate;
 
     return MaterialApp(
-      localizationsDelegates: [
-        i18n,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
-      ],
+      localizationsDelegates: [i18n],
       supportedLocales: i18n.supportedLocales,
       localeResolutionCallback: i18n.resolution(
         fallback: new Locale("en", "US"),
