@@ -1,4 +1,4 @@
-package com.example.playground;
+package com.example.internationalization;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
